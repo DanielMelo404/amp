@@ -1,0 +1,20 @@
+type Area @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String
+  People: [Person] @manyToMany(relationName: "AreaPerson")
+  subtagID: ID! @index(name: "bySubTag")
+}
+
+type Person @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  username: String
+  languages: String
+  description: String
+  areas: [Area] @manyToMany(relationName: "AreaPerson")
+  numberOfServices: Int
+  whatsappNumber: String
+  rating: Float
+  education: String
+  verifiedEducation: Boolean
+  experience: String
+}

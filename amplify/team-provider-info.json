@@ -1,0 +1,15 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-deino-staging-201006-authRole",
+      "UnauthRoleArn": "arn:aws:iam::966227540133:role/amplify-deino-staging-201006-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::966227540133:role/amplify-deino-staging-201006-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-deino-staging-201006-deployment",
+      "UnauthRoleName": "amplify-deino-staging-201006-unauthRole",
+      "StackName": "amplify-deino-staging-201006",
+      "StackId": "arn:aws:cloudformation:us-east-1:966227540133:stack/amplify-deino-staging-201006/eae29b40-a4c7-11ed-a621-12d1515325c9",
+      "AmplifyAppId": "d11uycad3h8wx8"
+    }
+  }
+}
