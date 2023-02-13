@@ -7,11 +7,10 @@
 import * as React from "react";
 import { Person, AreaPerson, Area } from "../models";
 import { EscapeHatchProps } from "@aws-amplify/ui-react/internal";
-import { BadgeProps, DividerProps, FlexProps, IconProps, ImageProps, RatingProps, TextProps, ViewProps } from "@aws-amplify/ui-react";
+import { BadgeProps, FlexProps, ImageProps, RatingProps, TextProps } from "@aws-amplify/ui-react";
 import { MyIconProps } from "./MyIcon";
 export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
 export declare type ProductCardOverridesProps = {
-    "72"?: PrimitiveOverrideProps<TextProps>;
     ProductCard?: PrimitiveOverrideProps<FlexProps>;
     image?: PrimitiveOverrideProps<ImageProps>;
     "Card Area"?: PrimitiveOverrideProps<FlexProps>;
@@ -22,24 +21,12 @@ export declare type ProductCardOverridesProps = {
     Badge29766804?: PrimitiveOverrideProps<BadgeProps>;
     Badge29766805?: PrimitiveOverrideProps<BadgeProps>;
     Badge29766806?: PrimitiveOverrideProps<BadgeProps>;
-    "Information about this product."?: PrimitiveOverrideProps<TextProps>;
+    "15 mins: 3$ 30 mins: 6$ 1h: 10$"?: PrimitiveOverrideProps<TextProps>;
+    "Mechatronics engineering student at national university of Colombia. I have 2 years of experience on reinforcement classes at IB schools. The following are some of the areas i can help you with: ML-AI, Stochastic processes, Multivariate calculus, Differential calculus, Robotics, digital-analog electronics, mechanical design, and many other subjects."?: PrimitiveOverrideProps<TextProps>;
     Quote?: PrimitiveOverrideProps<FlexProps>;
+    "Frame 419"?: PrimitiveOverrideProps<FlexProps>;
+    "Whatsapp number"?: PrimitiveOverrideProps<TextProps>;
     MyIcon?: MyIconProps;
-    "\u201CThis is a quote.\u201C"?: PrimitiveOverrideProps<TextProps>;
-    Divider?: PrimitiveOverrideProps<DividerProps>;
-    Features?: PrimitiveOverrideProps<FlexProps>;
-    Feature29766813?: PrimitiveOverrideProps<FlexProps>;
-    Icon29766814?: PrimitiveOverrideProps<ViewProps>;
-    Vector29766815?: PrimitiveOverrideProps<IconProps>;
-    Fast?: PrimitiveOverrideProps<TextProps>;
-    Feature29766817?: PrimitiveOverrideProps<FlexProps>;
-    Icon29766818?: PrimitiveOverrideProps<ViewProps>;
-    Vector29766819?: PrimitiveOverrideProps<IconProps>;
-    Fun?: PrimitiveOverrideProps<TextProps>;
-    Feature29766821?: PrimitiveOverrideProps<FlexProps>;
-    Icon29766822?: PrimitiveOverrideProps<ViewProps>;
-    Vector29766823?: PrimitiveOverrideProps<IconProps>;
-    Flirty?: PrimitiveOverrideProps<TextProps>;
 } & EscapeHatchProps;
 export declare type ProductCardProps = React.PropsWithChildren<Partial<FlexProps> & {
     person?: Person;

@@ -10,6 +10,7 @@ export { default as Ampligram } from "./Ampligram";
 export { default as HeroLayout3 } from "./HeroLayout3";
 export { default as ReviewCard } from "./ReviewCard";
 export { default as HeroLayout4 } from "./HeroLayout4";
+export { default as ProductCard2 } from "./ProductCard2";
 export { default as ActionCard } from "./ActionCard";
 export { default as FormCheckout } from "./FormCheckout";
 export { default as Features2x2 } from "./Features2x2";

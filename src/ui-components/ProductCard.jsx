@@ -7,16 +7,7 @@
 /* eslint-disable */
 import * as React from "react";
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
-import {
-  Badge,
-  Divider,
-  Flex,
-  Icon,
-  Image,
-  Rating,
-  Text,
-  View,
-} from "@aws-amplify/ui-react";
+import { Badge, Flex, Image, Rating, Text } from "@aws-amplify/ui-react";
 import MyIcon from "./MyIcon";
 export default function ProductCard(props) {
   const { person, areaPerson, area, overrides, ...rest } = props;
@@ -45,6 +36,7 @@ export default function ProductCard(props) {
         position="relative"
         padding="0px 0px 0px 0px"
         objectFit="cover"
+        src="https://media.licdn.com/dms/image/D4E35AQFIxP6rJpIcxg/profile-framedphoto-shrink_400_400/0/1668207372030?e=1676775600&v=beta&t=HoAy-C45X9YZctWKdHeiWL9Gm-GzEnIFO0hg02kCl9g"
         {...getOverrideProps(overrides, "image")}
       ></Image>
       <Flex
@@ -101,28 +93,6 @@ export default function ProductCard(props) {
             size="large"
             {...getOverrideProps(overrides, "Rating")}
           ></Rating>
-          <Text
-            fontFamily="Inter"
-            fontSize="16px"
-            fontWeight="400"
-            color="rgba(13,26,38,1)"
-            lineHeight="22px"
-            textAlign="left"
-            display="block"
-            direction="column"
-            justifyContent="unset"
-            textDecoration="underline"
-            width="19px"
-            height="unset"
-            gap="unset"
-            alignItems="unset"
-            shrink="0"
-            position="relative"
-            padding="0px 0px 0px 0px"
-            whiteSpace="pre-wrap"
-            children="72"
-            {...getOverrideProps(overrides, "72")}
-          ></Text>
         </Flex>
         <Flex
           gap="16px"
@@ -140,24 +110,47 @@ export default function ProductCard(props) {
             shrink="0"
             size="small"
             variation="default"
-            children={area?.name}
+            children="Maths"
             {...getOverrideProps(overrides, "Badge29766804")}
           ></Badge>
           <Badge
             shrink="0"
             size="small"
             variation="default"
-            children="Classic"
+            children="Physics"
             {...getOverrideProps(overrides, "Badge29766805")}
           ></Badge>
           <Badge
             shrink="0"
             size="small"
             variation="default"
-            children={area?.name}
+            children="Statistics"
             {...getOverrideProps(overrides, "Badge29766806")}
           ></Badge>
         </Flex>
+        <Text
+          fontFamily="Inter"
+          fontSize="16px"
+          fontWeight="700"
+          color="rgba(13,26,38,1)"
+          lineHeight="24px"
+          textAlign="left"
+          display="block"
+          direction="column"
+          justifyContent="unset"
+          letterSpacing="0.01px"
+          width="unset"
+          height="unset"
+          gap="unset"
+          alignItems="unset"
+          shrink="0"
+          alignSelf="stretch"
+          position="relative"
+          padding="0px 0px 0px 0px"
+          whiteSpace="pre-wrap"
+          children="15 mins: 3$       30 mins: 6$      1h: 10$"
+          {...getOverrideProps(overrides, "15 mins: 3$ 30 mins: 6$ 1h: 10$")}
+        ></Text>
         <Text
           fontFamily="Inter"
           fontSize="16px"
@@ -178,8 +171,11 @@ export default function ProductCard(props) {
           position="relative"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
-          children="Information about this product."
-          {...getOverrideProps(overrides, "Information about this product.")}
+          children="Mechatronics engineering student at national university of Colombia. I have 2 years of experience on reinforcement classes at IB schools. The following are some of the areas i can help you with:&#xA;ML-AI, Stochastic processes, Multivariate calculus, Differential calculus, Robotics, digital-analog electronics, mechanical design, and many other subjects."
+          {...getOverrideProps(
+            overrides,
+            "Mechatronics engineering student at national university of Colombia. I have 2 years of experience on reinforcement classes at IB schools. The following are some of the areas i can help you with: ML-AI, Stochastic processes, Multivariate calculus, Differential calculus, Robotics, digital-analog electronics, mechanical design, and many other subjects."
+          )}
         ></Text>
         <Flex
           gap="16px"
@@ -194,6 +190,43 @@ export default function ProductCard(props) {
           padding="0px 0px 0px 0px"
           {...getOverrideProps(overrides, "Quote")}
         >
+          <Flex
+            gap="10px"
+            direction="row"
+            width="unset"
+            height="unset"
+            justifyContent="flex-start"
+            alignItems="flex-start"
+            shrink="0"
+            position="relative"
+            borderRadius="10px"
+            padding="10px 10px 10px 10px"
+            backgroundColor="rgba(43,216,50,1)"
+            {...getOverrideProps(overrides, "Frame 419")}
+          >
+            <Text
+              fontFamily="Inter"
+              fontSize="16px"
+              fontWeight="700"
+              color="rgba(255,255,255,1)"
+              lineHeight="24px"
+              textAlign="left"
+              display="block"
+              direction="column"
+              justifyContent="unset"
+              letterSpacing="0.01px"
+              width="unset"
+              height="unset"
+              gap="unset"
+              alignItems="unset"
+              shrink="0"
+              position="relative"
+              padding="0px 0px 0px 0px"
+              whiteSpace="pre-wrap"
+              children="Whatsapp number"
+              {...getOverrideProps(overrides, "Whatsapp number")}
+            ></Text>
+          </Flex>
           <MyIcon
             width="24px"
             height="24px"
@@ -208,279 +241,6 @@ export default function ProductCard(props) {
             type="chat"
             {...getOverrideProps(overrides, "MyIcon")}
           ></MyIcon>
-          <Text
-            fontFamily="Inter"
-            fontSize="16px"
-            fontWeight="400"
-            color="rgba(48,64,80,1)"
-            lineHeight="24px"
-            textAlign="left"
-            display="block"
-            direction="column"
-            justifyContent="unset"
-            letterSpacing="0.01px"
-            width="unset"
-            height="unset"
-            gap="unset"
-            alignItems="unset"
-            grow="1"
-            shrink="1"
-            basis="0"
-            position="relative"
-            padding="0px 0px 0px 0px"
-            whiteSpace="pre-wrap"
-            children="“This is a quote.“"
-            {...getOverrideProps(overrides, "\u201CThis is a quote.\u201C")}
-          ></Text>
-        </Flex>
-        <Divider
-          width="unset"
-          shrink="0"
-          alignSelf="stretch"
-          size="small"
-          orientation="horizontal"
-          {...getOverrideProps(overrides, "Divider")}
-        ></Divider>
-        <Flex
-          gap="32px"
-          direction="row"
-          width="unset"
-          height="unset"
-          justifyContent="flex-start"
-          alignItems="flex-start"
-          shrink="0"
-          position="relative"
-          padding="0px 0px 0px 0px"
-          {...getOverrideProps(overrides, "Features")}
-        >
-          <Flex
-            gap="16px"
-            direction="row"
-            width="unset"
-            height="unset"
-            justifyContent="flex-start"
-            alignItems="flex-start"
-            shrink="0"
-            position="relative"
-            padding="0px 0px 0px 0px"
-            {...getOverrideProps(overrides, "Feature29766813")}
-          >
-            <View
-              width="24px"
-              height="24px"
-              display="block"
-              gap="unset"
-              alignItems="unset"
-              justifyContent="unset"
-              overflow="hidden"
-              shrink="0"
-              position="relative"
-              padding="0px 0px 0px 0px"
-              {...getOverrideProps(overrides, "Icon29766814")}
-            >
-              <Icon
-                width="17.59px"
-                height="13.41px"
-                viewBox={{
-                  minX: 0,
-                  minY: 0,
-                  width: 17.58984375,
-                  height: 13.40997314453125,
-                }}
-                paths={[
-                  {
-                    d: "M5.59 10.58L1.42 6.41L0 7.82L5.59 13.41L17.59 1.41L16.18 0L5.59 10.58Z",
-                    fill: "rgba(67,168,84,1)",
-                    fillRule: "nonzero",
-                  },
-                ]}
-                display="block"
-                gap="unset"
-                alignItems="unset"
-                justifyContent="unset"
-                position="absolute"
-                top="23.29%"
-                bottom="20.83%"
-                left="14.21%"
-                right="12.5%"
-                {...getOverrideProps(overrides, "Vector29766815")}
-              ></Icon>
-            </View>
-            <Text
-              fontFamily="Inter"
-              fontSize="16px"
-              fontWeight="400"
-              color="rgba(48,64,80,1)"
-              lineHeight="24px"
-              textAlign="left"
-              display="block"
-              direction="column"
-              justifyContent="unset"
-              letterSpacing="0.01px"
-              width="unset"
-              height="unset"
-              gap="unset"
-              alignItems="unset"
-              shrink="0"
-              position="relative"
-              padding="0px 0px 0px 0px"
-              whiteSpace="pre-wrap"
-              children="Fast"
-              {...getOverrideProps(overrides, "Fast")}
-            ></Text>
-          </Flex>
-          <Flex
-            gap="16px"
-            direction="row"
-            width="unset"
-            height="unset"
-            justifyContent="flex-start"
-            alignItems="flex-start"
-            shrink="0"
-            position="relative"
-            padding="0px 0px 0px 0px"
-            {...getOverrideProps(overrides, "Feature29766817")}
-          >
-            <View
-              width="24px"
-              height="24px"
-              display="block"
-              gap="unset"
-              alignItems="unset"
-              justifyContent="unset"
-              overflow="hidden"
-              shrink="0"
-              position="relative"
-              padding="0px 0px 0px 0px"
-              {...getOverrideProps(overrides, "Icon29766818")}
-            >
-              <Icon
-                width="17.59px"
-                height="13.41px"
-                viewBox={{
-                  minX: 0,
-                  minY: 0,
-                  width: 17.58984375,
-                  height: 13.40997314453125,
-                }}
-                paths={[
-                  {
-                    d: "M5.59 10.58L1.42 6.41L0 7.82L5.59 13.41L17.59 1.41L16.18 0L5.59 10.58Z",
-                    fill: "rgba(67,168,84,1)",
-                    fillRule: "nonzero",
-                  },
-                ]}
-                display="block"
-                gap="unset"
-                alignItems="unset"
-                justifyContent="unset"
-                position="absolute"
-                top="23.29%"
-                bottom="20.83%"
-                left="14.21%"
-                right="12.5%"
-                {...getOverrideProps(overrides, "Vector29766819")}
-              ></Icon>
-            </View>
-            <Text
-              fontFamily="Inter"
-              fontSize="16px"
-              fontWeight="400"
-              color="rgba(48,64,80,1)"
-              lineHeight="24px"
-              textAlign="left"
-              display="block"
-              direction="column"
-              justifyContent="unset"
-              letterSpacing="0.01px"
-              width="unset"
-              height="unset"
-              gap="unset"
-              alignItems="unset"
-              shrink="0"
-              position="relative"
-              padding="0px 0px 0px 0px"
-              whiteSpace="pre-wrap"
-              children="Fun"
-              {...getOverrideProps(overrides, "Fun")}
-            ></Text>
-          </Flex>
-          <Flex
-            gap="16px"
-            direction="row"
-            width="unset"
-            height="unset"
-            justifyContent="flex-start"
-            alignItems="flex-start"
-            shrink="0"
-            position="relative"
-            padding="0px 0px 0px 0px"
-            {...getOverrideProps(overrides, "Feature29766821")}
-          >
-            <View
-              width="24px"
-              height="24px"
-              display="block"
-              gap="unset"
-              alignItems="unset"
-              justifyContent="unset"
-              overflow="hidden"
-              shrink="0"
-              position="relative"
-              padding="0px 0px 0px 0px"
-              {...getOverrideProps(overrides, "Icon29766822")}
-            >
-              <Icon
-                width="17.59px"
-                height="13.41px"
-                viewBox={{
-                  minX: 0,
-                  minY: 0,
-                  width: 17.58984375,
-                  height: 13.40997314453125,
-                }}
-                paths={[
-                  {
-                    d: "M5.59 10.58L1.42 6.41L0 7.82L5.59 13.41L17.59 1.41L16.18 0L5.59 10.58Z",
-                    fill: "rgba(67,168,84,1)",
-                    fillRule: "nonzero",
-                  },
-                ]}
-                display="block"
-                gap="unset"
-                alignItems="unset"
-                justifyContent="unset"
-                position="absolute"
-                top="23.29%"
-                bottom="20.83%"
-                left="14.21%"
-                right="12.5%"
-                {...getOverrideProps(overrides, "Vector29766823")}
-              ></Icon>
-            </View>
-            <Text
-              fontFamily="Inter"
-              fontSize="16px"
-              fontWeight="400"
-              color="rgba(48,64,80,1)"
-              lineHeight="24px"
-              textAlign="left"
-              display="block"
-              direction="column"
-              justifyContent="unset"
-              letterSpacing="0.01px"
-              width="unset"
-              height="unset"
-              gap="unset"
-              alignItems="unset"
-              shrink="0"
-              position="relative"
-              padding="0px 0px 0px 0px"
-              whiteSpace="pre-wrap"
-              children="Flirty"
-              {...getOverrideProps(overrides, "Flirty")}
-            ></Text>
-          </Flex>
         </Flex>
       </Flex>
     </Flex>
