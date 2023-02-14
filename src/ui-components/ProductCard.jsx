@@ -89,6 +89,7 @@ export default function ProductCard(props) {
             width="135.75px"
             shrink="0"
             size="large"
+            value={4.5}
             {...getOverrideProps(overrides, "Rating")}
           ></Rating>
         </Flex>
@@ -230,7 +231,7 @@ export default function ProductCard(props) {
               position="relative"
               padding="0px 0px 0px 0px"
               whiteSpace="pre-wrap"
-              children="Whatsapp number"
+              children="Whatsapp number: +57 310 7098051"
               {...getOverrideProps(overrides, "Whatsapp number")}
             ></Text>
           </Flex>

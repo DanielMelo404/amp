@@ -108,7 +108,12 @@ function App() {
       </div>
 
       <div style={{display :(showProfs===true || showTerms === true || showContact === false) && 'none'}}>
-        <Contact  fontFamily='Arial' margin="auto" />
+        <Contact   fontFamily='Arial' margin="auto" 
+        overrides={{
+          Rating:{
+            
+          }
+        }}/>
       </div>
 
       
