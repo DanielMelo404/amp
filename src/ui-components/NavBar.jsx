@@ -115,6 +115,50 @@ export default function NavBar(props) {
           children="Find teachers"
           {...getOverrideProps(overrides, "Find teachers")}
         ></Text>
+        <Text
+          fontFamily="Inter"
+          fontSize="16px"
+          fontWeight="400"
+          color="rgba(0,0,0,1)"
+          lineHeight="24px"
+          textAlign="left"
+          display="block"
+          direction="column"
+          justifyContent="unset"
+          letterSpacing="0.01px"
+          width="unset"
+          height="unset"
+          gap="unset"
+          alignItems="unset"
+          shrink="0"
+          position="relative"
+          padding="0px 0px 0px 0px"
+          whiteSpace="pre-wrap"
+          children="Terms"
+          {...getOverrideProps(overrides, "Terms")}
+        ></Text>
+        <Text
+          fontFamily="Inter"
+          fontSize="16px"
+          fontWeight="400"
+          color="rgba(0,0,0,1)"
+          lineHeight="24px"
+          textAlign="left"
+          display="block"
+          direction="column"
+          justifyContent="unset"
+          letterSpacing="0.01px"
+          width="unset"
+          height="unset"
+          gap="unset"
+          alignItems="unset"
+          shrink="0"
+          position="relative"
+          padding="0px 0px 0px 0px"
+          whiteSpace="pre-wrap"
+          children="Contact"
+          {...getOverrideProps(overrides, "Contact")}
+        ></Text>
       </Flex>
       <Flex
         gap="32px"

@@ -15,6 +15,8 @@ export declare type NavBarOverridesProps = {
     Deino?: PrimitiveOverrideProps<TextProps>;
     "Frame 32129767076"?: PrimitiveOverrideProps<FlexProps>;
     "Find teachers"?: PrimitiveOverrideProps<TextProps>;
+    Terms?: PrimitiveOverrideProps<TextProps>;
+    Contact?: PrimitiveOverrideProps<TextProps>;
     "Frame 32129767081"?: PrimitiveOverrideProps<FlexProps>;
     image?: PrimitiveOverrideProps<ImageProps>;
 } & EscapeHatchProps;

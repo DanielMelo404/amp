@@ -1,13 +1,9 @@
 import React  from "react";
+import { FAQItem } from "./ui-components";
 
 
 export default function Terms(){
     return(
-        <div className="banner">
-            <h3 className="banner">
-            Get in touch with a math/physics/statistics teacher easy
-            </h3>
-
-        </div>
+        <FAQItem width='80%' margin='auto'/>
     )
 }

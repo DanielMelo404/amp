@@ -4,6 +4,7 @@ import './App.css';
 // import React from 'react'
 import { NavBar, ProductCardCollection } from './ui-components';
 import Terms from './terms.js'
+import Contact from './Contact.js'
 
 
 
@@ -43,6 +44,7 @@ import '@aws-amplify/ui-react/styles.css';
 function App() {
   const [showTerms, setShowTerms] = React.useState(false)
   const [showProfs, setShowProfs] = React.useState(true)
+  const [showContact, setShowContact] = React.useState(false)
 
   return (
 
@@ -61,13 +63,56 @@ function App() {
              Add to Cart
            </Button> */}
 
-      <NavBar overrides={{Terms:{onClick: () => setShowTerms(true)}}}/>
-      <div className='container' style={{display :showProfs===true && showTerms === false && 'none'}}>
+      <NavBar overrides={{
+        Terms:{
+        onClick: () => {
+        setShowTerms(true)
+        setShowProfs(false)
+        setShowContact(false)
+        },
+        style:{cursor:'pointer'}
+      }, 
+      'Find teachers':{
+          onClick: () => {
+            setShowProfs(true)
+            setShowTerms(false)
+            setShowContact(false)
+            },
+          style:{cursor:'pointer'}
+        }
+          ,
+          Contact:{
+            onClick: () => {
+              setShowProfs(false)
+              setShowTerms(false)
+              setShowContact(true)
+              },
+            style:{
+              cursor:'pointer'
+            }
+          }
+          
+          }}/>
+      <div className='container'  style={{display :(showProfs===true || showTerms === false || showContact === true) && 'none'}}>
         <Terms/>
       </div>
-      <div style={{display :showProfs===false && showTerms === true && 'none'}}>
+      <div style={{display :(showProfs===false && showTerms === true || showContact === true) && 'none'}}>
+      <div className="banner">
+            <h3 className="banner">
+            Get in touch with a math/physics/statistics teacher easy
+            </h3>
+
+        </div>
+
         <ProductCardCollection  fontFamily='Arial' margin="auto" />
       </div>
+
+      <div style={{display :(showProfs===true || showTerms === true || showContact === false) && 'none'}}>
+        <Contact  fontFamily='Arial' margin="auto" />
+      </div>
+
+      
+
       
     </>
   );
