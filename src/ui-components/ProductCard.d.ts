@@ -8,7 +8,6 @@ import * as React from "react";
 import { Person, AreaPerson, Area } from "../models";
 import { EscapeHatchProps } from "@aws-amplify/ui-react/internal";
 import { BadgeProps, FlexProps, ImageProps, RatingProps, TextProps } from "@aws-amplify/ui-react";
-import { MyIconProps } from "./MyIcon";
 export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
 export declare type ProductCardOverridesProps = {
     ProductCard?: PrimitiveOverrideProps<FlexProps>;
@@ -26,7 +25,6 @@ export declare type ProductCardOverridesProps = {
     Quote?: PrimitiveOverrideProps<FlexProps>;
     "Frame 419"?: PrimitiveOverrideProps<FlexProps>;
     "Whatsapp number"?: PrimitiveOverrideProps<TextProps>;
-    MyIcon?: MyIconProps;
 } & EscapeHatchProps;
 export declare type ProductCardProps = React.PropsWithChildren<Partial<FlexProps> & {
     person?: Person;

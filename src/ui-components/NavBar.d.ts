@@ -15,10 +15,7 @@ export declare type NavBarOverridesProps = {
     Deino?: PrimitiveOverrideProps<TextProps>;
     "Frame 32129767076"?: PrimitiveOverrideProps<FlexProps>;
     "Find teachers"?: PrimitiveOverrideProps<TextProps>;
-    About?: PrimitiveOverrideProps<TextProps>;
-    Terms?: PrimitiveOverrideProps<TextProps>;
     "Frame 32129767081"?: PrimitiveOverrideProps<FlexProps>;
-    "Hello Daniel"?: PrimitiveOverrideProps<TextProps>;
     image?: PrimitiveOverrideProps<ImageProps>;
 } & EscapeHatchProps;
 export declare type NavBarProps = React.PropsWithChildren<Partial<FlexProps> & {

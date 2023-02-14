@@ -8,15 +8,14 @@
 import * as React from "react";
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
 import { Badge, Flex, Image, Rating, Text } from "@aws-amplify/ui-react";
-import MyIcon from "./MyIcon";
 export default function ProductCard(props) {
   const { person, areaPerson, area, overrides, ...rest } = props;
   return (
     <Flex
       gap="0"
       direction="row"
-      width="960px"
-      height="unset"
+      width="800px"
+      height="307px"
       justifyContent="flex-start"
       alignItems="flex-start"
       position="relative"
@@ -40,23 +39,21 @@ export default function ProductCard(props) {
         {...getOverrideProps(overrides, "image")}
       ></Image>
       <Flex
-        gap="24px"
+        gap="7px"
         direction="column"
-        width="unset"
-        height="unset"
+        width="480px"
+        height="307px"
         justifyContent="flex-start"
         alignItems="flex-start"
-        grow="1"
-        shrink="1"
-        basis="0"
+        shrink="0"
         position="relative"
-        padding="32px 32px 32px 32px"
+        padding="18px 32px 32px 32px"
         backgroundColor="rgba(255,255,255,1)"
         {...getOverrideProps(overrides, "Card Area")}
       >
         <Text
           fontFamily="Inter"
-          fontSize="20px"
+          fontSize="18px"
           fontWeight="700"
           color="rgba(13,26,38,1)"
           lineHeight="25px"
@@ -64,12 +61,11 @@ export default function ProductCard(props) {
           display="block"
           direction="column"
           justifyContent="unset"
-          width="unset"
-          height="unset"
+          width="439px"
+          height="24px"
           gap="unset"
           alignItems="unset"
           shrink="0"
-          alignSelf="stretch"
           position="relative"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
@@ -77,10 +73,10 @@ export default function ProductCard(props) {
           {...getOverrideProps(overrides, "Classic Long Sleeve T-Shirt")}
         ></Text>
         <Flex
-          gap="16px"
+          gap="10.245615005493164px"
           direction="row"
-          width="unset"
-          height="unset"
+          width="146px"
+          height="26.25px"
           justifyContent="flex-start"
           alignItems="center"
           shrink="0"
@@ -89,13 +85,15 @@ export default function ProductCard(props) {
           {...getOverrideProps(overrides, "Ratings")}
         >
           <Rating
+            gap="5.122807502746582px"
+            width="135.75px"
             shrink="0"
             size="large"
             {...getOverrideProps(overrides, "Rating")}
           ></Rating>
         </Flex>
         <Flex
-          gap="16px"
+          gap="14.967741966247559px"
           direction="row"
           width="unset"
           height="unset"
@@ -107,6 +105,9 @@ export default function ProductCard(props) {
           {...getOverrideProps(overrides, "Tags")}
         >
           <Badge
+            gap="9.354838371276855px"
+            borderRadius="29.935483932495117px"
+            padding="5.612903118133545px 7.483870983123779px 5.612903118133545px 7.483870983123779px"
             shrink="0"
             size="small"
             variation="default"
@@ -114,6 +115,9 @@ export default function ProductCard(props) {
             {...getOverrideProps(overrides, "Badge29766804")}
           ></Badge>
           <Badge
+            gap="9.354838371276855px"
+            borderRadius="29.935483932495117px"
+            padding="5.612903118133545px 7.483870983123779px 5.612903118133545px 7.483870983123779px"
             shrink="0"
             size="small"
             variation="default"
@@ -121,6 +125,9 @@ export default function ProductCard(props) {
             {...getOverrideProps(overrides, "Badge29766805")}
           ></Badge>
           <Badge
+            gap="9.354838371276855px"
+            borderRadius="29.935483932495117px"
+            padding="5.612903118133545px 7.483870983123779px 5.612903118133545px 7.483870983123779px"
             shrink="0"
             size="small"
             variation="default"
@@ -130,7 +137,7 @@ export default function ProductCard(props) {
         </Flex>
         <Text
           fontFamily="Inter"
-          fontSize="16px"
+          fontSize="14px"
           fontWeight="700"
           color="rgba(13,26,38,1)"
           lineHeight="24px"
@@ -138,7 +145,7 @@ export default function ProductCard(props) {
           display="block"
           direction="column"
           justifyContent="unset"
-          letterSpacing="0.01px"
+          letterSpacing="0px"
           width="unset"
           height="unset"
           gap="unset"
@@ -153,15 +160,15 @@ export default function ProductCard(props) {
         ></Text>
         <Text
           fontFamily="Inter"
-          fontSize="16px"
+          fontSize="13px"
           fontWeight="400"
           color="rgba(13,26,38,1)"
-          lineHeight="24px"
+          lineHeight="16px"
           textAlign="left"
           display="block"
           direction="column"
           justifyContent="unset"
-          letterSpacing="0.01px"
+          letterSpacing="0px"
           width="unset"
           height="unset"
           gap="unset"
@@ -200,13 +207,13 @@ export default function ProductCard(props) {
             shrink="0"
             position="relative"
             borderRadius="10px"
-            padding="10px 10px 10px 10px"
+            padding="5px 10px 5px 10px"
             backgroundColor="rgba(43,216,50,1)"
             {...getOverrideProps(overrides, "Frame 419")}
           >
             <Text
               fontFamily="Inter"
-              fontSize="16px"
+              fontSize="13px"
               fontWeight="700"
               color="rgba(255,255,255,1)"
               lineHeight="24px"
@@ -214,7 +221,7 @@ export default function ProductCard(props) {
               display="block"
               direction="column"
               justifyContent="unset"
-              letterSpacing="0.01px"
+              letterSpacing="0px"
               width="unset"
               height="unset"
               gap="unset"
@@ -227,20 +234,6 @@ export default function ProductCard(props) {
               {...getOverrideProps(overrides, "Whatsapp number")}
             ></Text>
           </Flex>
-          <MyIcon
-            width="24px"
-            height="24px"
-            display="block"
-            gap="unset"
-            alignItems="unset"
-            justifyContent="unset"
-            overflow="hidden"
-            shrink="0"
-            position="relative"
-            padding="0px 0px 0px 0px"
-            type="chat"
-            {...getOverrideProps(overrides, "MyIcon")}
-          ></MyIcon>
         </Flex>
       </Flex>
     </Flex>

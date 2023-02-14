@@ -19,6 +19,7 @@ export { default as HeroLayout2 } from "./HeroLayout2";
 export { default as ProfileCard } from "./ProfileCard";
 export { default as TallCard } from "./TallCard";
 export { default as Features2x3 } from "./Features2x3";
+export { default as NavBar2 } from "./NavBar2";
 export { default as FeaturesText2x2 } from "./FeaturesText2x2";
 export { default as EditProfile } from "./EditProfile";
 export { default as MyIcon } from "./MyIcon";
